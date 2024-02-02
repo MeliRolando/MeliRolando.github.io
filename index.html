@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon_mariposa.ico">
+    <title>Melanie Rolando</title>
+</head>
+<body>
+    <header>
+        <nav class="contenedor-menu">
+            <p class="melanie-nombre" href="#top">melanie</p>
+            <nav class="menu">
+                <a class="link hide" href="#top">Home</a>
+                <a class="link" href="#acerca-de">Acerca de</a>
+                <a class="link-nombre hide" href="#top">melanie</a>
+                <a class="link" href="#myBtnContainer">Porfolio</a>
+                <a class="link" href="#contacto">Contacto</a>
+            </nav>
+        </nav>
+        
+        <div class="imagen">
+            <img src="img/portada.jpg" alt="banner de portada">
+        </div>
+
+        <!-- Acerca de -->
+        <div class="estilo-titulares" id="acerca-de">
+            <h2>Acerca de mi</h2>
+        </div>
+
+        <div class="presentacion">
+            <div class="mi-foto">
+                <img src="img/presentacion.png" alt="imagen personal acerca de mi">
+            </div>
+            <div class="presentacion-card">
+                <h3>Hola, Soy Melanie Rolando</h3>
+                    <p>Soy Diseñadora Gráfica. Vivo en Capital Federal, Argentina. Estoy en la busqueda de oportunidades para poner a prueba mis habilidades en diseños creativos y unicos.
+                    <br>
+                    Me apasiona aprender sobre nuevas tecnologías.
+                    <br>
+                    Me especializo en el Diseño Editorial, Branding y Packagings.
+                    <br>
+                    Le invito a ver mi Porfolio y algunos de mis proyectos. 
+                    De estar interesado no dude en contactarme.
+            </div>
+        </div>
+        <div class="fondo-beige"></div>
+                  
+    <!-- Porfolio -->
+    <main>
+        <div class="porfolio" id="myBtnContainer">
+            <h2>Porfolio</h2>
+
+            <nav class="dropdown">
+                <a onclick="dropdown()" class="dropbtn"><i class="fa-solid fa-bars"></i>Menu</a>
+                <div id="myDropdown" class="dropdown-content">
+                <a href="#myBtnContainer" class="btn active" onclick="filterSelection('branding')">Branding</a>
+                <a href="#myBtnContainer" class="btn" onclick="filterSelection('editorial')">Editorial</a>
+                <a href="#myBtnContainer" class="btn" onclick="filterSelection('ilustracion')">Ilustracion</a>
+                <a href="#myBtnContainer" class="btn" onclick="filterSelection('web')">Web Design</a>
+                <a href="#myBtnContainer" class="btn" onclick="filterSelection('all')">Todos</a>
+                </div>
+            </nav>
+
+            <nav class="submenu-porfolio">
+                <a href="#myBtnContainer" class="btn active" onclick="filterSelection('branding')">BRANDING</a>
+                <a>|</a>
+                <a href="#myBtnContainer" class="btn" onclick="filterSelection('editorial')">EDITORIAL</a>
+                <a>|</a>
+                <a href="#myBtnContainer" class="btn" onclick="filterSelection('ilustracion')">ILUSTRACIÓN</a>
+                <a>|</a>
+                <a href="#myBtnContainer" class="btn" onclick="filterSelection('web')">WEB DESIGN</a>
+                <a>|</a>
+                <a href="#myBtnContainer" class="btn" onclick="filterSelection('all')">TODOS</a>
+            </nav>
+        </div>
+
+            <div class="container">
+                <!-- Branding: Alusion al olvido -->
+                <section class="filterDiv branding">
+                    <a href="https://i.imgur.com/rLqKs9l.png" 
+                    data-fancybox="images-alusion-d" 
+                    data-width="1200">
+                    <img src="https://i.imgur.com/fBcMsAh.png" alt="Imagen de folleto Alusión al olvido" />
+                    </a>
+                    <div>
+                        <a href="https://i.imgur.com/7j2LH1t.png" data-fancybox="images-alusion-d" 
+                        data-width="1200"></a>
+                    
+                        <a href="https://i.imgur.com/vTZCXKY.png" data-fancybox="images-alusion-d" 
+                        data-width="1200"></a>
+                    
+                        <a href="https://i.imgur.com/HxsMOpU.png" data-fancybox="images-alusion-d" 
+                        data-width="1200"></a>
+                    
+                        <a href="https://i.imgur.com/UgaVDe1.png" data-fancybox="images-alusion-d" 
+                        data-width="1200"></a>
+
+                        <a href="https://i.imgur.com/Idur9Ni.png" data-fancybox="images-alusion-d" 
+                        data-width="1200"></a>
+
+                        <a href="https://i.imgur.com/0yolje3.jpg" data-fancybox="images-alusion-d" 
+                        data-width="1200"></a>
+                    
+                        <a href="https://i.imgur.com/wgVyp4I.png" data-fancybox="images-alusion-d" 
+                        data-width="1920"></a>
+                    </div>
+                    <article class="articulo">
+                    <h3>Alusión al olvido</h3>
+                    <p>Sistema gráfico diseñado para la comunicación visual de un Ciclo de Cine de Christopher Doyle</p>
+                    </article>
+                </section>
+                <!-- El cambio genera belleza -->
+                <section class="filterDiv branding">
+                    <a href="https://i.imgur.com/7UiaIXu.png" 
+                    data-fancybox="images-belleza-d" 
+                    data-width="1200">
+                    <img src="https://i.imgur.com/J8K2BKG.png" alt="Imagen de Expo El Cambio Genera Belleza" />
+                    </a>
+                    <div>
+                        <a href="https://i.imgur.com/TkuJgi3.png" data-fancybox="images-belleza-d" 
+                        data-width="1200"></a>
+                    
+                        <a href="https://i.imgur.com/0iHRs9Y.png" data-fancybox="images-belleza-d" 
+                        data-width="1200"></a>
+                    
+                        <a href="https://i.imgur.com/5C3KBzW.jpg" data-fancybox="images-belleza-d" 
+                        data-width="1200"></a>
+                    
+                        <a href="https://i.imgur.com/HIVSOvI.jpg" data-fancybox="images-belleza-d" 
+                        data-width="1920"></a>
+                        <a href="https://i.imgur.com/k6ldzqK.png" data-fancybox="images-belleza-d" 
+                        data-width="1920"></a>
+                    </div>
+                    <article class="articulo">
+                    <h3>El Cambio Genera Belleza</h3>
+                    <p>Diseño de un Sistema Gráfico realizado para una Expo de Eugenio Cuttica en el Museo de Bellas Artes</p>
+                    </article>
+                </section>
+                <!-- Munchis -->
+                <section class="filterDiv branding">
+                    <a href="https://i.imgur.com/hLS9uqd.png" 
+                    data-fancybox="images-munchis-d" 
+                    data-width="1200">
+                    <img src="https://i.imgur.com/bof5r76.png" alt="Imagen de logo Munchis">
+                    </a>
+                    <div>
+                        <a href="https://i.imgur.com/ULn5Jo2.png" data-fancybox="images-munchis-d" 
+                            data-width="1191"></a>
+                        <a href="https://i.imgur.com/q8bkZL4.png" data-fancybox="images-munchis-d" 
+                        data-width="1191"></a>
+                        <a href="https://i.imgur.com/y8PcbEb.png" data-fancybox="images-munchis-d" 
+                        data-width="1191"></a>
+                        <a href="https://i.imgur.com/xb7a9S1.png" data-fancybox="images-munchis-d" 
+                        data-width="1191"></a>
+                        <a href="https://i.imgur.com/MVWKyey.png" data-fancybox="images-munchis-d" 
+                            data-width="1191"></a>
+                        <a href="https://i.imgur.com/a2ntePF.png" data-fancybox="images-munchis-d" 
+                        data-width="1191"></a>
+                        <a href="https://i.imgur.com/7k25UG4.png" data-fancybox="images-munchis-d" 
+                        data-width="1191"></a>
+                        <a href="https://i.imgur.com/Lu6hUTU.png" data-fancybox="images-munchis-d" 
+                        data-width="1191"></a>
+                        <a href="https://i.imgur.com/QSvWfW8.png" data-fancybox="images-munchis-d" 
+                        data-width="1191"></a>
+                    </div>
+                    <article class="articulo">
+                    <h3>Munchis</h3>
+                    <p>Rediseño de la Identidad Corporativa de Munchis, Sistema Gerencial e Informal de Papeleria, Piezas de Comunicación y Manual de Marcas</p>
+                    </article>
+                </section>
+                <!-- Wonder Woman -->
+                <section class="filterDiv branding">
+                    <a href="https://i.imgur.com/qRweBkl.jpg" 
+                    data-fancybox="images-ww-d" 
+                    data-width="1200">
+                    <img src="https://i.imgur.com/IJvjPTZ.png" alt="Imagen de personaje Wonder Woman" />
+                    </a>
+                    <div>
+                        <a href="https://i.imgur.com/NzSgOJS.png" data-fancybox="images-ww-d" 
+                            data-width="1200"></a>
+                        <a href="https://i.imgur.com/SWTyhw6.png" data-fancybox="images-ww-d" 
+                        data-width="1200"></a>
+                        <a href="https://i.imgur.com/Skatw2j.png" data-fancybox="images-ww-d" 
+                        data-width="794"></a>
+                        <a href="https://i.imgur.com/6HfScR9.png" data-fancybox="images-ww-d" 
+                        data-width="794"></a>
+                    </div>
+                    <article class="articulo">
+                    <h3>Wonder Woman</h3>
+                    <p>Campaña Gráfica y Rediseño de Personaje para una Applicación de Dispositivos Moviles</p>
+                    </article>
+                </section>
+                <!-- Marta Propiedades -->
+                <section class="filterDiv branding">
+                    <a href="https://i.imgur.com/c8JUtTD.jpg" 
+                    data-fancybox="images-marta" 
+                    data-width="1200">
+                    <img src="https://i.imgur.com/spQB5rm.png" alt="Imagen de tarjeta personal de Marta Bujan Propiedades" />
+                    </a>
+                    <div>
+                        <a href="https://i.imgur.com/IEPif0w.jpg" data-fancybox="images-marta" 
+                        data-width="1200"></a>
+                        <a href="https://i.imgur.com/ra9xLrj.jpg" data-fancybox="images-marta" 
+                        data-width="1200"></a>
+                        <a href="https://i.imgur.com/sX8a4z5.jpg" data-fancybox="images-marta" 
+                            data-width="1200"></a>
+                        <a href="https://i.imgur.com/wozoFbe.jpg" data-fancybox="images-marta" 
+                        data-width="1200"></a>
+                        <a href="https://i.imgur.com/7d4sMp4.jpg" data-fancybox="images-marta" 
+                        data-width="1200"></a>
+                        <a href="https://i.imgur.com/sBllWmK.jpg" data-fancybox="images-marta" 
+                        data-width="1200"></a>
+                    </div>
+                    <article class="articulo">
+                    <h3>Marta Bujan Propiedades</h3>
+                    <p>Rediseño de logo, tarjeta personal y plantillas de Instagram para una Inmobiliaria</p>
+                    </article>
+                </section>
+                <!-- Stand ID -->
+                <section class="filterDiv branding">
+                    <a href="https://i.imgur.com/08lKboc.png" 
+                    data-fancybox="images-id" 
+                    data-width="1275" data-height="900">
+                    <img src="https://i.imgur.com/etEIkIu.png" alt="Imagen de Stand Minuatura de Investigation Discovery"/>
+                    </a>
+                    <div>
+                        <a href="https://i.imgur.com/A8M9aXy.png" data-fancybox="images-id" 
+                        data-width="1275" data-height="900"></a>
+                    
+                        <a href="https://i.imgur.com/R0ccnVq.png" data-fancybox="images-id" 
+                        data-width="1920"></a>
+                    
+                        <a href="https://i.imgur.com/xkO0SOo.png" data-fancybox="images-id" 
+                        data-width="1920"></a>
+
+                        <a href="https://i.imgur.com/ijeFfcY.png" data-fancybox="images-id" 
+                        data-width="1920"></a>
+
+                        <a href="https://i.imgur.com/al72CJp.png" data-fancybox="images-id" 
+                        data-width="1920"></a>
+                    </div>
+                    <article class="articulo">
+                    <h3>Stand ID</h3>
+                    <p>Rediseño de la Identidad Visual del canal de televisión "Investigation Discovery" y desarrollo de una maqueta de Stand Publicitario y Planos de Representación Gráfica.</p>
+                    </article>
+                </section>
+                <!-- Rebel Beats -->
+                <section class="filterDiv branding">
+                    <a href="https://i.imgur.com/JWfDQAU.jpg" 
+                    data-fancybox="images-rebel" 
+                    data-width="1200">
+                    <img src="https://i.imgur.com/RPQZJdC.png" alt="Poster del canal de radio Rebel Beats" />
+                    </a>
+                    <div>
+                        <a href="https://i.imgur.com/PMjyyDh.jpg" data-fancybox="images-rebel" 
+                            data-width="1200"></a>
+                        <a href="https://i.imgur.com/rIRlZUw.jpg" data-fancybox="images-rebel" 
+                        data-width="1200"></a>
+                        <a href="https://i.imgur.com/SDGVXat.png" data-fancybox="images-rebel" 
+                        data-width="1200"></a>
+                        <a href="https://i.imgur.com/FS1zsK4.png" data-fancybox="images-rebel" 
+                        data-width="1200"></a>
+                    </div>
+                    <article class="articulo">
+                    <h3>Rebel Beats</h3>
+                    <p>Sistema gráfico diseñado para la radio Rebel Beats, Creación de Poster y Manual de Marcas</p>
+                    </article>
+                </section>
+                <!-- House of CB -->
+                <section class="filterDiv editorial">
+                    <a href="https://i.imgur.com/Vai2264.jpg" 
+                    data-fancybox="images-house-d" 
+                    data-width="1200">
+                    <img src="https://i.imgur.com/KFaxELg.jpg" alt="Imagen de Newsletter de House of CB" />
+                    </a>
+                    <article class="articulo">
+                    <h3>Summer Sale</h3>
+                    <p>Newsletter de Moda y Belleza Diseñado para House of CB</p>
+                    </article>
+                </section>
+                <!-- Guia de Palermo -->
+                <section class="filterDiv editorial">
+                    <a href="https://i.imgur.com/ZAvPgOn.png" 
+                    data-fancybox="images-palermo" 
+                    data-width="1200">
+                    <img src="https://i.imgur.com/pxPtqA7.png" alt="Imagen de Guia Barrial de Palermo"/>
+                    </a>
+                    <div>
+                        <a href="https://i.imgur.com/anSPHEa.png" data-fancybox="images-palermo" 
+                            data-width="1200"></a>
+                        <a href="https://i.imgur.com/sCmZ1FP.png" data-fancybox="images-palermo" 
+                            data-width="1200"></a>
+                        <a href="https://i.imgur.com/9wmJQf4.png" data-fancybox="images-palermo" 
+                            data-width="1200"></a>
+                        <a href="https://i.imgur.com/8BEPnIb.png" data-fancybox="images-palermo" 
+                        data-width="1200"></a>
+                        <a href="https://i.imgur.com/m0hluMC.png" data-fancybox="images-palermo" 
+                        data-width="1200"></a>
+                        <a href="https://i.imgur.com/eIgXiHH.png" data-fancybox="images-palermo" 
+                            data-width="1200"></a>
+                        <a href="https://i.imgur.com/L07yXLG.png" data-fancybox="images-palermo" 
+                            data-width="1200"></a>
+                        <a href="https://i.imgur.com/IKoeSft.png" data-fancybox="images-palermo" 
+                            data-width="1200"></a>
+                    </div>
+                    <article class="articulo">
+                    <h3>Guía de Palermo</h3>
+                    <p>Diseño de catálogo barrial de Palermo y guía de bolsillo</p>
+                    </article>
+                </section>
+                <!-- Articulo Mac -->
+                <section class="filterDiv editorial">
+                    <a href="https://i.imgur.com/dKAytlm.png" 
+                    data-fancybox="images-mac-d" 
+                    data-width="1200">
+                    <img src="https://i.imgur.com/uLCXOvR.png" alt="Imagen de Articulo Infográfico de Mac y Dietter Rams" />
+                    </a>
+                    <div>
+                        <a href="https://i.imgur.com/J5U3Ypk.png" data-fancybox="images-mac-d" 
+                        data-width="1200"></a>
+                    
+                        <a href="https://i.imgur.com/kW6NfoW.png" data-fancybox="images-mac-d" 
+                        data-width="1200"></a>
+                    
+                        <a href="https://i.imgur.com/czJh5Zx.png" data-fancybox="images-mac-d" 
+                        data-width="1200"></a>
+                    </div>
+                    <article class="articulo">
+                    <h3>La inspiracíon de apple</h3>
+                    <p>Artículo infográfico realizado acerca de la inspiracíon que tuvo Jonathan Ive en Dieter Rams para la creación de sus dispositivos electrónicos</p>
+                    </article>
+                </section>
+                <!-- Alejandro Dodds -->
+                <section class="filterDiv editorial">
+                    <a href="https://i.imgur.com/RUjDgHT.png" 
+                    data-fancybox="images-ale" 
+                    data-width="1200">
+                    <img src="https://i.imgur.com/veSAAUd.png" alt="Imagen de Tarjeta personal diseñada para un Odontologo" />
+                    </a>
+                    <div>
+                        <a href="https://i.imgur.com/9cnH6I8.png" data-fancybox="images-ale" 
+                            data-width="1200"></a>
+                        <a href="https://i.imgur.com/Uw6rboD.png" data-fancybox="images-ale" 
+                        data-width="1200"></a>
+                        <a href="https://i.imgur.com/12zNtyx.jpg" data-fancybox="images-ale" 
+                        data-width="1200"></a>
+                    </div>
+                    <article class="articulo">
+                    <h3>Alejandro Dodds</h3>
+                    <p>Diseño de logo y tarjeta personal para un Odontólogo</p>
+                    </article>
+                </section>
+                <!-- Edgar Vazquez -->
+                <section class="filterDiv editorial">
+                    <a href="https://i.imgur.com/4iXgHkV.jpg" 
+                    data-fancybox="images-vazques" 
+                    data-width="1200">
+                    <img src="https://i.imgur.com/CCgaJrT.png" alt="Imagen de Tarjeta personal diseñada para un Constructor" />
+                    </a>
+                    <article class="articulo">
+                    <h3>Edgar Vazquez</h3>
+                    <p>Diseño de logo y tarjeta personal para un Contructor</p>
+                    </article>
+                </section>
+                <!-- Milena Comas -->
+                <section class="filterDiv editorial">
+                    <a href="https://i.imgur.com/IWY50tb.png" 
+                    data-fancybox="images-milena" 
+                    data-width="1200">
+                    <img src="https://i.imgur.com/Lm02QUU.png" alt="Imagen de Tarjeta Personal Diseñada para una Lic. Psicologa Laboral" />
+                    </a>
+                    <div>
+                        <a href="https://i.imgur.com/CcfReYz.png" data-fancybox="images-milena" 
+                            data-width="1200"></a>
+                        <a href="https://i.imgur.com/iA7zFvw.png" data-fancybox="images-milena" 
+                        data-width="1200" ></a>
+                    </div>
+                    <article class="articulo">
+                    <h3>Milena Comas</h3>
+                    <p>Diseño de Tarjeta Personal y Firmas de Mail para una Lic. Psicologa laboral</p>
+                    </article>
+                </section>
+                <!-- Feast for crows -->
+                <section class="filterDiv editorial">
+                    <a href="https://i.imgur.com/sbcpt3v.png" 
+                    data-fancybox="images-libro" 
+                    data-width="1200">
+                    <img src="https://i.imgur.com/sGFOZFB.png" alt="Imagen de portada de libro" />
+                    </a>
+                    <div>
+                        <a href="https://i.imgur.com/t1Iw5g1.png" data-fancybox="images-libro" 
+                        data-width="1200" ></a>
+                        <a href="https://i.imgur.com/fPRoJFQ.png" data-fancybox="images-libro" 
+                        data-width="1200""></a>
+                        <a href="https://i.imgur.com/CIAae5B.png" data-fancybox="images-libro" 
+                        data-width="1200"></a>
+                    </div>
+                    <article class="articulo">
+                    <h3>A feast for Crows</h3>
+                    <p>Rediseño de portada de libro de la saga "Game of Thrones"</p>
+                    </article>
+                </section>
+                <!-- Melanie Rolando -->
+                <section class="filterDiv editorial">
+                    <a href="https://i.imgur.com/IpUeShS.png" 
+                    data-fancybox="images-meli" 
+                    data-width="1200">
+                    <img src="https://i.imgur.com/7jk98F2.png" alt="Imagen de tarjeta personal propia" />
+                    </a>
+                    <div>
+                        <a href="https://i.imgur.com/sS8ArJ9.png" data-fancybox="images-meli" 
+                        data-width="1200"></a>
+                    </div>
+                    <article class="articulo">
+                    <h3>Melanie Rolando</h3>
+                    <p>Diseño de tarjeta personal</p>
+                    </article>
+                </section>
+                <!-- Self Promo -->
+                <section class="filterDiv editorial">
+                    <a href="https://i.imgur.com/jvSjjue.png" 
+                    data-fancybox="images-selfpromo" 
+                    data-width="1191">
+                    <img src="https://i.imgur.com/qliSPJR.png" alt="Imagen de folleto de porfolio personal" />
+                    </a>
+                    <div>
+                        <a href="https://i.imgur.com/bn8ILF1.png" data-fancybox="images-selfpromo" 
+                            data-width="1191"></a>
+                        <a href="https://i.imgur.com/dGaFcuA.png" data-fancybox="images-selfpromo" 
+                        data-width="1191"></a>
+                    </div>
+                    <article class="articulo">
+                    <h3>Self Promo</h3>
+                    <p>Diseño de portafolio personal</p>
+                    </article>
+                </section>
+                <!-- Nes-Flet -->
+                <section class="filterDiv editorial">
+                    <a href="https://i.imgur.com/oOg6daD.png" 
+                    data-fancybox="images-nestor" 
+                    data-width="1200">
+                    <img src="https://i.imgur.com/Jnucqsw.png" alt="Imagen de tarjeta personal para un transporte de mudanzas" />
+                    </a>
+                    <article class="articulo">
+                    <h3>Nes-Flet</h3>
+                    <p>Diseño de tarjeta personal para un transporte de mudanzas</p>
+                    </article>
+                </section>
+                <!-- Ilustracion: Batman -->
+                <section class="filterDiv ilustracion">
+                    <a href="https://i.imgur.com/VlzbZYd.png" 
+                    data-fancybox="images-batman" 
+                    data-width="1200">
+                    <img src="https://i.imgur.com/WSsRblR.png" alt="Poster retro minimalista de Batman" />
+                    </a>
+                    <div>
+                        <a href="https://i.imgur.com/iMCyJLB.png" data-fancybox="images-batman" 
+                            data-width="1200"></a>
+                        <a href="https://i.imgur.com/fA4Qgq0.png" data-fancybox="images-batman" 
+                        data-width="1200"></a>
+                    </div>
+                    <article class="articulo">
+                    <h3>Batman</h3>
+                    <p>Diseño de Posters Minimalistas para la Expo Borges</p>
+                    </article>
+                </section> 
+                <!-- Iconos -->
+                <section class="filterDiv ilustracion">
+                    <a href="https://i.imgur.com/ZpX8BY4.png" 
+                    data-fancybox="images-iconos" 
+                    data-width="1200">
+                    <img src="https://i.imgur.com/tTOKOkK.png" alt="Imagen de sistema de íconos" />
+                    </a>
+                    <div>
+                        <a href="https://i.imgur.com/YT4nUTl.png" data-fancybox="images-iconos" 
+                            data-width="1200"></a>
+                        <a href="https://i.imgur.com/7P72AtO.png" data-fancybox="images-iconos" 
+                        data-width="1200"></a>
+                    </div>
+                    <article class="articulo">
+                    <h3>Sistema de Íconos</h3>
+                    <p>Proyecto basado en tipos reales, creación de Sistema de Íconos version en linea, pleno, color y modulación</p>
+                    </article>
+                </section>
+                <!-- Pictogramas --> 
+                <section class="filterDiv ilustracion">
+                    <a href="https://i.imgur.com/6wVto4u.png" 
+                    data-fancybox="images-pictos" 
+                    data-width="1200">
+                    <img src="https://i.imgur.com/bbiInsl.png" alt="Imagen de pictograma de Katty Perry" />
+                    </a>
+                    <div>
+                        <a href="https://i.imgur.com/gq13pEM.png" data-fancybox="images-pictos" 
+                            data-width="1200"></a>
+                    </div>
+                    <article class="articulo">
+                    <h3>Pictogramas</h3>
+                    <p>Sistema pictogramático de 5 piezas realizado a partir de las fotos de Actores Famosos</p>
+                    </article>
+                </section>
+                <!-- Brave --> 
+                <section class="filterDiv ilustracion">
+                    <a href="https://i.imgur.com/g9l8x7Q.png" 
+                    data-fancybox="images-brave" 
+                    data-width="1200">
+                    <img src="https://i.imgur.com/ACRlRHF.png" alt="Imagen de posavasos de Brave" />
+                    </a>
+                    <div>
+                        <a href="https://i.imgur.com/N87z4bE.png" data-fancybox="images-brave" 
+                            data-width="1200"></a>
+                    </div>
+                    <article class="articulo">
+                    <h3>Brave</h3>
+                    <p>Rediseño de personajes de la pelicula Brave, creacion de individuales y posavasos</p>
+                    </article>
+                </section>
+                <!-- Lightning Guardians -->
+                <section class="filterDiv ilustracion">
+                    <a href="https://i.imgur.com/4YoP4AJ.png" 
+                data-fancybox="images-samurai" 
+                data-width="1200">
+                <img src="https://i.imgur.com/DGY0YT7.png" alt="Imagen de juego de mesa Lightning Guardians" />
+                </a>
+                <div>
+                    <a href="https://i.imgur.com/ORQzxNT.png" data-fancybox="images-samurai" 
+                        data-width="1200"></a>
+                    <a href="https://i.imgur.com/80mr0vd.png" data-fancybox="images-samurai" 
+                    data-width="1200"></a>
+                    <a href="https://i.imgur.com/QPSzl5e.png" data-fancybox="images-samurai" 
+                    data-width="1200"></a>
+                    <a href="https://i.imgur.com/iftDgDp.png" data-fancybox="images-samurai" 
+                    data-width="1200"></a>
+                </div>
+                    <article class="articulo">
+                    <h3>Lightning Guardians</h3>
+                    <p>Creación de personajes y juego de mesa</p>
+                    </article>
+                </section>
+                <!-- Pack de imanes -->
+                <section class="filterDiv ilustracion">
+                    <a href="https://i.imgur.com/aDerzTI.png" 
+                    data-fancybox="images-imanes" 
+                    data-width="1200">
+                    <img src="https://i.imgur.com/uDC4ESE.png" alt="Imagen de imanes de gatitos" />
+                    </a>
+                    <div>
+                        <a href="https://i.imgur.com/ZNsMUJT.png" data-fancybox="images-imanes" 
+                            data-width="1200"></a>
+                        <a href="https://i.imgur.com/lGgWxkV.png" data-fancybox="images-imanes" 
+                        data-width="1200"></a>
+                    </div>
+                    <article class="articulo">
+                    <h3>Pack de imanes</h3>
+                    <p>Creación de imanes con reglas de la morfología que incluyen los 7 dias de la semana</p>
+                    </article>
+                </section>
+                <!-- Tren a las nubes -->
+                <section class="filterDiv ilustracion">
+                    <a href="https://i.imgur.com/magcuyB.png" 
+                    data-fancybox="images-stickers" 
+                    data-width="1200">
+                    <img src="https://i.imgur.com/oRfgg7D.png" alt="Sticker retro Tren a las Nubes"/>
+                    </a>
+                    <div>
+                        <a href="https://i.imgur.com/qhzs7Z4.png" data-fancybox="images-stickers" 
+                            data-width="1200"></a>
+                    </div>
+                    <article class="articulo">
+                    <h3>Stickers Retro</h3>
+                    <p>Diseño de stickers con estilo retro para la Expo Borges</p>
+                    </article>
+                </section>
+                <!-- FAECC -->
+                <section class="filterDiv ilustracion">
+                    <a href="https://i.imgur.com/lYKrh8g.jpg" 
+                    data-fancybox="images-señaletica" 
+                    data-width="1200">
+                    <img src="https://i.imgur.com/ldSFDqn.png" alt="Plano PB de la FAECC" />
+                    </a>
+                    <div>
+                        <a href="https://i.imgur.com/jq8rXaV.png" data-fancybox="images-señaletica" 
+                        data-width="1920"></a>
+                    </div>
+                    <article class="articulo">
+                    <h3>FAECC</h3>
+                    <p>Diseño de un Sistema Señalético que oriente a las personas en el espacio y facilite su desplazamiento y el uso de los servicios que la Institución ofrece</p>
+                    </article>
+                </section>
+                <!-- Web Design: Bariloche -->
+                <section class="filterDiv web">
+                    <a href="https://i.imgur.com/5p3aJNw.png" 
+                    data-fancybox="images-bariloche" 
+                    data-width="1191">
+                    <img src="https://i.imgur.com/64uQZwl.png" alt="Imagen del prototipo de la Web Bariloche" />
+                    </a>
+                    <div>
+                        <a href="https://i.imgur.com/IiGYxmV.png" data-fancybox="images-bariloche" 
+                            data-width="1191"></a>
+                        <a href="https://i.imgur.com/952njkV.png" data-fancybox="images-bariloche" 
+                        data-width="1191"></a>
+                    </div>
+                    <article class="articulo">
+                    <h3>Diario digital Bariloche</h3>
+                    <p>Creación del Prototipo de una Web de noticias de Bariloche adaptable a dispositivos moviles</p>
+                    </article>
+                </section>
+            </div>
+        
+        <!-- Contacto -->
+        <div class="estilo-titulares" id="contacto">
+            <h2>Contacto</h2>
+        </div>
+
+        <form action="https://formspree.io/f/mdoppyaj" method="POST" class="formulario" id="my-form">
+            <div class="nombre-bloque">
+                <input type="text" class="nombre" name="name" id="name" placeholder="Nombre">
+            </div>
+            <div class="mail-bloque">
+                <input type="email" class="mail" name="email" id="email" placeholder="Mail">
+            </div>
+            <div class="mensaje-bloque">
+                <textarea name="message" placeholder="Mensaje" id="message" cols="30" rows="10"></textarea>
+            </div>
+            <a href="#"><input type="submit" id="my-form-button" value="Enviar mensaje"></a>
+            <p class="my-form-status" id="my-form-status"></p>
+            <p class="warnings" id="warnings"></p>
+        </form>
+    </main>
+        
+    <!-- Pie de pagina -->
+    <footer class="footer">
+        <div class="widgets">
+            <a href="mailto:melanie.nrolando@gmail.com" class="widget"><i class="fas fa-envelope-square"></i></a>
+            <a href='https://wa.me/5491133642285' class="widget" target='_blank'><i class="fab fa-whatsapp-square"></i>
+            <a href="https://www.behance.net/melanierolando" class="widget" target="_blank"><i class="fab fa-behance-square"></i></a>
+            <a href="https://www.linkedin.com/in/melanie-rolando-6b8909209/" class="widget" target="_blank"><i class="fab fa-linkedin-square"></i></a>
+        </div>
+        <p class="texto-copyright">COPYRIGHT © 2024 · SITIO CREADO POR MELANIE ROLANDO</p>
+    </footer>
+    
+
+<script src="js/jquery-3.6.3.min.js"></script>
+<!-- Fancybox3 -->
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/script.js"></script>    
+<script src="https://kit.fontawesome.com/af04f00c60.js" crossorigin="anonymous"></script>    
+</body>
+</html>
+

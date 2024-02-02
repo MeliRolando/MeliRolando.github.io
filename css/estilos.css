@@ -1,0 +1,633 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+#acerca-de,
+#porfolio,
+#contacto,
+#educacion,
+#experiencia,
+#habilidades,
+#myBtnContainer,
+#experiencia-mostrar,
+#habilidades-mostrar  {
+    scroll-margin-top: 70px;
+}
+
+.contenedor-menu {
+    position: fixed;
+    width: 100%;
+    background-color: #FAF5F2;
+}
+
+.melanie-nombre {
+    display: none;
+    text-align: center;
+}
+
+.menu {
+    height: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.menu a {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin: 0 30px;
+    color: black;
+    padding-top: 10px;
+}
+
+.menu .link:hover {
+    color: #D17D74;
+}
+
+.melanie-nombre,
+.menu .link-nombre {
+    font-family: 'Rouge Script', sans-serif;
+    font-size: 54px;
+    -webkit-text-stroke: 0.5px black;
+    padding-bottom: 10px;
+    color: black;
+}
+
+.imagen {
+    line-height: 0;
+    max-width: 1920px;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.estilo-titulares {
+    background-color: #EDDBD3;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.estilo-titulares h2 {
+    font-family: 'Dancing Script', cursive;
+    -webkit-text-stroke: 0.5px black;
+    font-size: 35px;
+}
+
+.presentacion {
+    padding: 50px 0;
+}
+
+.mi-foto{
+   display: flex;
+   justify-content: center;
+   width: 100%;
+}
+
+.mi-foto img {
+    max-width: 550px;
+    z-index: -5;
+}
+
+.presentacion-card {
+    background-color: white;
+    max-width: 480px;
+    height: auto;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    margin: 0 auto;
+    margin-top: -185px;
+}
+
+.presentacion-card h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    -webkit-text-stroke: 0.5px black;
+}
+
+.presentacion-card p {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+    padding: 10px 0;
+}
+
+.presentacion-card a.enlace {
+    background-color: #D17D74;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    display: inline-block;
+    width: 150px;
+    height: 45px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 0;
+    line-height: 25px;
+}
+
+.presentacion-card a.enlace:hover {
+    color:  #D17D74;
+    background:#FAF5F2;
+}
+
+.presentacion-card a.experiencia {
+    margin-left: 15px;
+}
+
+.icono-skill {
+    color: #EDDBD3;
+    margin-left: 20px;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+.icono-skill:hover {
+    color: #D17D74;
+}
+
+.fondo-beige {
+    background-color: #FAF5F2;
+    height: 400px;
+    margin-top: -400px;
+    z-index: -10;
+    position: relative;
+    width: 100%;
+}
+
+/*Educación cards*/
+.contenedor-cards-educacion {
+   display: grid;
+   grid-template-columns: auto auto auto;
+   justify-content: center;
+   gap: 25px;
+   width: 100%;
+   margin: 50px 0;
+}
+
+.card-educacion {
+    max-width: 300px;
+    padding: 0 20px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    line-height: 25px;
+    font-size: 14px;
+    height: auto;
+}
+
+.card-educacion img {
+    width:110px;
+    height:110px;
+    border-radius:150px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.texto-educacion h3 {
+    padding-top: 20px;
+}
+
+.texto-educacion .instituto {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.texto-educacion .fecha-cursado {
+    color: #D17D74;
+    font-weight: 700;
+}
+
+.texto-educacion ul {
+    list-style: none;
+}
+
+.botones-acerca-de {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.botones-acerca-de a{
+    color: #EDDBD3;
+    font-size: 30px;
+    padding: 0 5px;
+}
+
+/*Experiencia cards*/
+.cards-experiencia {
+    margin: 50px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: auto auto ;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+ }
+
+.card-experiencia {
+    background-color: #FAF5F2;
+    max-width: 450px;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+    line-height: 25px;
+    font-size: 14px;
+    height: auto;
+    padding: 20px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+ }
+
+.texto-experiencia ul {
+    list-style: none;
+}
+
+.fecha-experiencia {
+    color: #D17D74;
+    font-weight: 700;
+}
+
+.icono {
+    color: #D17D74;
+    
+}
+
+i {
+    margin-right:5px;
+}
+
+/* Habilidades */
+.seccion-habilidades {
+    margin: 50px auto;
+    max-width: 500px;
+}
+
+.texto-habilidades {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.contenedor-barra {
+    width: 100%; 
+    background-color: #EDDBD3; 
+    height: 30px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+  
+.habilidades {
+    text-align: right; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #FAF5F2;
+}
+  
+.html {width: 90%; background-color: #D17D74; height: 30px;} 
+.css {width: 80%; background-color: #D17D74; height: 30px;} 
+.js {width: 50%; background-color: #D17D74; height: 30px;} 
+.adobe {width: 70%; background-color: #D17D74; height: 30px;}
+.figma {width: 80%; background-color: #D17D74; height: 30px;}  
+  
+/*Porfolio menu*/
+.porfolio {
+    background: #000;
+    height: 140px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+    padding: 25px;
+}
+
+.porfolio h2 {
+    font-family:'Dancing Script', cursive;
+    -webkit-text-stroke: 0.5px #fff;
+    font-size: 35px;
+    color: pink;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.submenu-porfolio {
+    display: flex;
+    justify-content: center;
+}
+
+.submenu-porfolio a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    margin: 0 15px;
+    padding: 20px 0;
+}
+
+.submenu-porfolio a:hover {
+    color: #D17D74;
+}
+
+/*Dropdown*/
+.dropbtn {
+    color: #EDDBD3;
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+  
+.dropdown {
+    display: none;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+  
+.dropdown a:hover {background-color: #D17D74;}
+  
+.show {display: block;}
+/*Cierre del Dropdown*/
+
+/*Galeria de imagenes*/
+.container {
+   display: grid;
+   grid-template-columns: auto auto auto;
+   justify-content: center;
+   gap: 25px;
+   width: 100%;
+   margin: 50px auto;
+   max-height: 1010px;
+   overflow: auto;
+}
+
+.filterDiv {
+    max-width: 300px;
+    width: 100%;
+    background-color: #FAF5F2 ;
+    font-family: 'Lato', sans-serif;
+    line-height: 25px;
+    font-size: 15px;
+    max-height: 520px;
+    display: none; /* Ocultar galeria por defecto */
+}
+
+.show {
+    display: block; /*show para mostrar la galeria*/
+}
+
+.articulo {
+    padding: 10px 20px;
+}
+
+.filterDiv img {
+    width: 100%;
+}
+
+.filterDiv h3 {
+    font-weight: 700;
+    padding-bottom: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.filterDiv p {
+    padding-bottom: 10px;
+}
+
+/* Formulario de contacto */
+.formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.formulario input[type=text], input[type=email], textarea {
+    background-color: #FAF5F2;
+    width: 100%;
+    padding: 12px 20px;
+    border: 0;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+.formulario .mensaje-bloque {
+    grid-column: 1 / span 2;
+}
+
+.formulario textarea {
+    resize: none;
+    height: 150px;
+}
+
+.formulario input[type=submit]{
+    background-color: #D17D74;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #fff;
+    width: 165px;
+    height: 45px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+    border: none;
+} 
+
+input[type=submit]:hover {
+    color: #D17D74;
+    background-color: #FAF5F2;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+.formulario .my-form-status {
+    color: gray;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.warnings {
+    color: gray;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.footer {
+    height: auto;
+    background-color: #D17D74;
+    padding: 25px 0;
+}
+
+.widgets {
+    display: flex;
+    justify-content: center;
+}
+
+.widget {
+    font-size: 40px;
+    color: #EDDBD3;
+    letter-spacing: 5px;
+}
+
+.footer p {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    color: #FAF5F2;
+    margin-top: 10px;
+}
+
+/*Tablet*/
+@media only screen and (max-width: 768px) {
+    #acerca-de,
+    #porfolio,
+    #contacto,
+    #educacion,
+    #experiencia,
+    #habilidades,
+    #myBtnContainer,
+    #experiencia-mostrar,
+    #habilidades-mostrar  {
+    scroll-margin-top: 125px;
+    }
+
+    .melanie-nombre {
+    display: block;
+    height: 65px;
+    }
+
+    .menu {
+        height: 65px;
+    }
+
+    .menu .hide {
+        display: none;
+    }
+
+    .imagen img {
+        padding-top: 130px;
+    }
+
+    .cards-experiencia {
+        gap: 20px;
+    }
+
+    .card-experiencia {
+        max-width: 350px;
+    }
+
+    .dropdown {
+        display: flex;
+        justify-content: center;
+    }
+
+    .submenu-porfolio a {
+       display: none;
+    }
+
+    .porfolio .submenu_list {
+        display: block;
+    }
+
+    .container {
+        grid-template-columns: auto auto;
+        margin: 50px 20px;
+    }
+
+    .formulario {
+        margin: 50px 20px;
+    }
+
+    .formulario .nombre-bloque,
+    .formulario .mail-bloque {
+        grid-column: 1 / span 2 ;
+    }
+}
+
+/*Mobile*/
+@media only screen and (max-width: 560px) {
+    .menu a {
+        margin: 0 20px;
+        }
+
+    .container {
+        grid-template-columns: auto;
+    }
+
+    .contenedor-cards-educacion {
+        grid-template-columns: auto;
+        gap: 40px;
+     }
+ 
+     .cards-experiencia {
+         grid-template-columns: auto;
+     }
+    
+}
+
+/*Mobile con menor resolucion*/
+
+@media only screen and (max-width: 360px) {
+
+    .presentacion-card {
+     margin-top: -80px;
+    }
+
+    .presentacion-card a.enlace {
+    width: 110px;
+    font-size: 15px;
+    }    
+
+    .seccion-habilidades {
+    margin: 50px 20px;
+    }
+
+    .container {
+        width: 100%;
+        margin: 50px auto;
+    }
+
+    .presentacion-card a.experiencia {
+        margin-left: 5px;
+    }
+}
+
+
+
+
